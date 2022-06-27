@@ -1,0 +1,54 @@
+---
+name: Simona
+surname: Cibulkova
+position: "Data Analyst Junior"
+phone: +420 732 751 595
+profilepic: Simona.jpg
+email: "cibulkovasimona@gmail.com"
+github: cibulkosi
+linkedin: simona-cibulkova
+aboutme: "Digital skills: MS Office, basic knowledge of, SQL / R / Tableau, beginner in Python, basic statistics in IBM SPSS and PAST, GIT and GitHub, website building (WordPress, basic knowledge of HTML and CSS). Languages: Czech–native, English–C1, German–B1, Greek–A2"
+output: vitae::twentyseconds
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+```
+
+# Certificates
+
+```{r}
+library(tibble)
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where,
+  "Google Data Analytics Professional Certificate", "2021-2022", "Coursera", "The course helped me to develop data analytics skills using spreadsheets, SQL, Tableau and R."
+) %>% 
+  detailed_entries(Degree, Year, Institution, Where)
+```
+
+# Education
+
+```{r}
+library(tibble)
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where,
+  "Master’s degree: Anthropology", "2019–2022", "Charles University in Prague, Faculty of Science", "The courses focused mainly on physical anthropology and biology, ecology, human ethology, genetics, and statistics. In addition to anthropological subjects, I also completed courses focused on data analysis (SQL, R, Python). In my diploma thesis, which dealt with forensic virtual anthropology, I used various 3D modelling programs and programs for statistical analysis (R, SPSS, PAST).",
+  "Bachelor’s degree: Anthropology", "2015–2019", "University of West Bohemia in Pilsen, Faculty of Philosophy", "Erasmus: Anthropology (09/2017–06/2018), University of Kent",
+  "Master’s degree: Tourism Management", "2007–2012", "University of Business in Prague", "The program included courses in Economics, Marketing and Management of Business, Public Administration, Culture Management, Travel Agency Management, as well as International Tourism."
+) %>% 
+  detailed_entries(Degree, Year, Institution, Where)
+```
+
+# Work experience
+
+```{r}
+library(tibble)
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where,
+  "English Language Teacher", "2018–now", "", "I currently teach English as a private tutor. My students are mainly beginners and intermediate. I also taught English for a year at a primary school in Chrastany.",
+  "Travel Agent", "2019–2020", "European Kiwis Limited", "My responsibility was to book tickets for travellers going to New Zealand, Australia and back. This involved communicating with clients and airlines. I used Galileo and Amadeus reservation systems.",
+  "Administrative Secretary and Public Procurement Assistant", "2013–2016", "The Waterways Directorate of The Czech Republic", "My position included the administrative activities as well as preparation of tender documents (more than 50 public procurement processes in a year)."
+) %>% 
+  detailed_entries(Degree, Year, Institution, Where)
+```
